@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registry</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>
+      Welcome to our Home Page for internal users!
+    </h1>
+
+    {{#if logged_in}}
+
+    <nav>
+      <button class="btn" id="logout">logout</button>
+    </nav>
+    {{/if}}
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+  </nav>
+  <main>
+    <aside>
+      <h1>Vitamins Company!</h1>
+    </aside>
+    <div class="products">
+      <div class="container container-fluid mt-5">
+        {{{ body }}}
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+</body>
+
+
+</html>

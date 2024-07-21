@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chooseMachine.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="chooseMachineContainer">
+        <h3 id="cMTitle">Choose a Machine you are assign to today:</h3>
+        <dialog id="favDialog">
+            <form>
+            <p>
+                <label>
+                a Machine List available for you:
+                <select>
+                    <option value="default">Choose…</option>
+                    <option>Machine A</option>
+                    <option>Machine B</option>
+                    <option>Machine C</option>
+                    <option>Machine D</option>
+                </select>
+                </label>
+            </p>
+            <div>
+                <button value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="default">Confirm</button>
+            </div>
+            </form>
+        </dialog>
+        <p>
+            <button id="showDialog">Choose a Machine</button>
+        </p>
+        <output></output>
+
+    </div>
+
+        
+
+    <script src="chooseMachine.js"></script>
+
+</body>
+</html>

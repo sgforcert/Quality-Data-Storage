@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Create a new Sequelize model for Machines
-class Sample extends Model {}
+class MachineAccess extends Model {}
 
 MachineAccess.init(
   // Define fields/columns on model
@@ -52,8 +52,8 @@ MachineAccess.init(
     timestamps: false,
     underscored: true,
     // freezeTableName: true,
-    modelName: 'sample'
+    modelName: 'machineaccess'
   }
 );
 
-module.exports = Sample;
+module.exports = MachineAccess;

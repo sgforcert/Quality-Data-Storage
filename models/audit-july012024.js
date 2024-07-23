@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Create a new Sequelize model for Machines
-class audit_july012014 extends Model {}
+class audit_july012024 extends Model {}
 
-audit_july012014.init(
+audit_july012024.init(
   // Define fields/columns on model
   // An `id` is automatically created by Sequelize, we define the primary key ourselves
   {
@@ -60,8 +60,8 @@ audit_july012014.init(
     timestamps: false,
     underscored: true,
     // freezeTableName: true,
-    modelName: 'audit_july012014'
+    modelName: 'audit_july012024'
   }
 );
 
-module.exports = audit_july012014;
+module.exports = audit_july012024;

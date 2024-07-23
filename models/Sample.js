@@ -24,13 +24,13 @@ Sample.init(
     },
     // This column will contain a foreign key: the `id` of the `Machine` that owns this Sample
     machine_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            // This references areconnected to the `Machine` model, which has machine `id`
-            model: 'machine',
-            key: 'id',
-        },
-    },
+      type: DataTypes.INTEGER,
+      references: {
+          // This references areconnected to the `Machine` model, which has machine `id`
+          model: 'machine',
+          key: 'id',
+      },
+  },
   },
   {
     hooks: {

@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS audit_db;
+CREATE DATABASE audit_db;

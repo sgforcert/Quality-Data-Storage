@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Create a new Sequelize model for Machines
-class audit_july012014 extends Model {}
+class result extends Model {}
 
-audit_july012014.init(
+result.init(
   // Define fields/columns on model
   // An `id` is automatically created by Sequelize, we define the primary key ourselves
   {
@@ -30,9 +30,11 @@ audit_july012014.init(
             key: 'id',
         },
     },
-    sample_time: {
+    sample_day: {
         type: DataTypes.STRING,
         allowNull: false,
+        // 'isDate: true' - only allow date strings "2011-11-28"
+        isDate: true,
     },
     sample_notes: {
         type: DataTypes.STRING,
@@ -60,8 +62,8 @@ audit_july012014.init(
     timestamps: false,
     underscored: true,
     // freezeTableName: true,
-    modelName: 'audit_july012014'
+    modelName: 'result'
   }
 );
 
-module.exports = audit_july012014;
+module.exports = result;

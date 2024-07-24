@@ -2,10 +2,7 @@ const Operator = require('./Operator.js');
 const Machine = require('./Machine.js');
 const Sample = require('./Sample.js');
 const MachineAccess = require('./MachineAccess.js');
-const audit_july012024 = require('./audit_july012024.js');
-const audit_july022024 = require('./audit_july022024.js');
-const audit_july032024 = require('./audit_july032024.js');
-const audit_july042024 = require('./audit_july042024.js');
+const result = require('./result.js');
 
 // connections for Sample-Machine tables 
 Machine.hasMany(Sample, {
@@ -38,41 +35,29 @@ MachineAccess.belongsTo(Machine, {
 });
 
 // connections for audit_july012024-Machine-Operator-Sample tables
-Machine.hasMany(audit_july012024, {
+Machine.hasMany(result, {
   foreignKey: 'machine_id',
 });
 
-audit_july012024.belongsTo(Machine, {
+result.belongsTo(Machine, {
   foreignKey: 'machine_id',
 });
 
-Operator.hasMany(audit_july012024, {
+Operator.hasMany(result, {
   foreignKey: 'machine_id',
 });
 
-audit_july012024.belongsTo(Operator, {
+result.belongsTo(Operator, {
   foreignKey: 'machine_id',
 });
 
-Sample.hasMany(audit_july012024, {
+Sample.hasMany(result, {
   foreignKey: 'machine_id',
 });
 
-audit_july012024.belongsTo(Sample, {
+result.belongsTo(Sample, {
   foreignKey: 'machine_id',
 });
 
-// connections for audit_july022024-Machine-Operator-Sample tables
-
-
-
-// connections for audit_july032024-Machine-Operator-Sample tables
-
-
-
-// connections for audit_july042024-Machine-Operator-Sample tables
-
-
-
-  module.exports = { Machine, Sample, Operator, MachineAccess, audit_july012024 };
+  module.exports = { Machine, Sample, Operator, MachineAccess, result };
 

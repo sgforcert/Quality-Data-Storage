@@ -22,18 +22,17 @@ Operator.init(
       type: DataTypes.STRING,
       isAlpha: true,
       allowNull: false,
-      unique: true,
     },
     role: {
-        type: DataTypes.STRING,
-        isAlpha: true,
-        allowNull: false,
+      type: DataTypes.STRING,
+      isAlpha: true,
+      allowNull: false,
     },
     registration_date: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        // 'isDate: true' - only allow date strings "2011-11-28"
-        isDate: true, 
+      type: DataTypes.STRING,
+      allowNull: false,
+      // 'isDate: true' - only allow date strings "2011-11-28"
+      isDate: true, 
     },
     email: {
       type: DataTypes.STRING,
@@ -53,6 +52,27 @@ Operator.init(
     },
   },
   {
+    // source for hooks: bootcamp module13/activity17
+    hooks: {
+      // the beforeCreate hook to work with data before a new instance is created and added to database. It makes all letters of the user's email address to be lower case
+      beforeCreate: async (newUserData) => {
+        newUserData.email = await newUserData.email.toLowerCase();
+        return newUserData;
+      },
+
+      // the beforeCreate hook to work with data before a new instance is created and added to database. It hashes the password 
+      beforeCreate: async (newUserData) => {
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        return newUserData;
+      },
+
+      // // the beforeUpdate hook to make all of the characters lower case in an updated email address, before updating the database.
+      // beforeUpdate: async (updatedUserData) => {
+      //   updatedUserData.email = await updatedUserData.email.toLowerCase();
+      //   return updatedUserData;
+      // },
+    },
+
     sequelize,
     timestamps: false,
     underscored: true,

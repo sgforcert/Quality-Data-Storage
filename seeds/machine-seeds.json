@@ -1,0 +1,18 @@
+[
+    {
+        "machine_name": "A",
+        "registration_date": "2017-10-21"
+    },
+    {
+        "machine_name": "B",
+        "registration_date": "2017-10-15"
+    },
+    {
+        "machine_name": "C",
+        "registration_date": "2017-10-08"
+    },
+    {
+        "machine_name": "D",
+        "registration_date": "2017-11-05"
+    }
+]

@@ -2,6 +2,10 @@ const Operator = require('./Operator.js');
 const Machine = require('./Machine.js');
 const Sample = require('./Sample.js');
 const MachineAccess = require('./MachineAccess.js');
+const audit_july012024 = require('./audit_july012024.js');
+const audit_july022024 = require('./audit_july022024.js');
+const audit_july032024 = require('./audit_july032024.js');
+const audit_july042024 = require('./audit_july042024.js');
 
 // connections for Sample-Machine tables 
 Machine.hasMany(Sample, {
@@ -70,5 +74,5 @@ audit_july012024.belongsTo(Sample, {
 
 
 
-  module.exports = { Machine, Sample, Operator, MachineAccess };
+  module.exports = { Machine, Sample, Operator, MachineAccess, audit_july012024 };
 

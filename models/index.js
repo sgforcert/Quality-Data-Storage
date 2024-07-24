@@ -34,7 +34,7 @@ MachineAccess.belongsTo(Machine, {
   foreignKey: 'machine_id',
 });
 
-// connections for audit_july012024-Machine-Operator-Sample tables
+// connections for result-Machine-Operator-Sample tables
 Machine.hasMany(result, {
   foreignKey: 'machine_id',
 });
@@ -44,20 +44,20 @@ result.belongsTo(Machine, {
 });
 
 Operator.hasMany(result, {
-  foreignKey: 'machine_id',
+  foreignKey: 'operator_id',
 });
 
 result.belongsTo(Operator, {
-  foreignKey: 'machine_id',
+  foreignKey: 'operator_id',
 });
 
 Sample.hasMany(result, {
-  foreignKey: 'machine_id',
+  foreignKey: 'sample_id',
 });
 
 result.belongsTo(Sample, {
-  foreignKey: 'machine_id',
+  foreignKey: 'sample_id',
 });
 
-  module.exports = { Machine, Sample, Operator, MachineAccess, result };
+  module.exports = { Operator, Machine, Sample, MachineAccess, result };
 

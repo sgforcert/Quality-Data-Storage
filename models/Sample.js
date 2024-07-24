@@ -44,7 +44,7 @@ Sample.init(
     sequelize,
     timestamps: false,
     underscored: true,
-    // freezeTableName: true,
+    freezeTableName: true,
     modelName: 'sample'
   }
 );

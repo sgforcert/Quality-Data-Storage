@@ -13,19 +13,17 @@ result.init(
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
+    },
+    machine_id: {
+      type: DataTypes.INTEGER,
+      references: {
+          model: 'machine',
+          key: 'id',
       },
-      machine_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            // This references areconnected to the `Machine` model, which has machine `id`
-            model: 'machine',
-            key: 'id',
-        },
     },
     sample_id: {
         type: DataTypes.INTEGER,
         references: {
-            // This references areconnected to the `Machine` model, which has machine `id`
             model: 'sample',
             key: 'id',
         },
@@ -61,7 +59,7 @@ result.init(
     sequelize,
     timestamps: false,
     underscored: true,
-    // freezeTableName: true,
+    freezeTableName: true,
     modelName: 'result'
   }
 );

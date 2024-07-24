@@ -1,10 +1,14 @@
 const { Model, DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-// Create a new Sequelize model for Machines
-class Machine extends Model {}
+class Operator extends Model {
+  checkPassword(loginPw) {
+    return bcrypt.compareSync(loginPw, this.password);
+  }
+}
 
-Machine.init(
+Operator.init(
   // Define fields/columns on model
   // An `id` is automatically created by Sequelize, we define the primary key ourselves
   {
@@ -14,15 +18,20 @@ Machine.init(
         primaryKey: true,
         autoIncrement: true,
       },
-    machine_name: {
+    operator_name: {
         type: DataTypes.STRING,
         isAlpha: true,
         allowNull: false,
         unique: true,
-        // must be 1 character long
+        // must be 30 character long
         validate: {
-          len: [1],
+          len: [30],
         },
+    },
+    role: {
+        type: DataTypes.STRING,
+        isAlpha: true,
+        allowNull: false,
     },
     registration_date: {
         type: DataTypes.STRING,
@@ -32,20 +41,12 @@ Machine.init(
     },
   },
   {
-    hooks: {
-        // the beforeCreate hook works with data before a new Machine instance is created
-        beforeCreate: async (newData) => {
-          // machine_name is taken and machine_name letter is maken to be upper case before to be added to the database.
-          newData.machine_name = await newData.machine_name.toUpperCase();
-          return newData;
-        },
-      },
     sequelize,
     timestamps: false,
     underscored: true,
     freezeTableName: true,
-    modelName: 'machine'
+    modelName: 'operator'
   }
 );
 
-module.exports = Machine;
+module.exports = Operator;

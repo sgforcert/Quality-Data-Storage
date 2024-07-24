@@ -13,20 +13,16 @@ Operator.init(
   // An `id` is automatically created by Sequelize, we define the primary key ourselves
   {
     id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true,
-      },
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     operator_name: {
-        type: DataTypes.STRING,
-        isAlpha: true,
-        allowNull: false,
-        unique: true,
-        // must be 30 character long
-        validate: {
-          len: [30],
-        },
+      type: DataTypes.STRING,
+      isAlpha: true,
+      allowNull: false,
+      unique: true,
     },
     role: {
         type: DataTypes.STRING,
@@ -38,6 +34,22 @@ Operator.init(
         allowNull: false,
         // 'isDate: true' - only allow date strings "2011-11-28"
         isDate: true, 
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        // can be 5 or more character long
+        len: [5],
+      },
     },
   },
   {

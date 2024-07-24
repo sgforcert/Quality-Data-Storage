@@ -43,7 +43,7 @@ Machine.init(
     sequelize,
     timestamps: false,
     underscored: true,
-    // freezeTableName: true,
+    freezeTableName: true,
     modelName: 'machine'
   }
 );

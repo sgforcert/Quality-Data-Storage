@@ -51,7 +51,7 @@ MachineAccess.init(
     sequelize,
     timestamps: false,
     underscored: true,
-    // freezeTableName: true,
+    freezeTableName: true,
     modelName: 'machineaccess'
   }
 );

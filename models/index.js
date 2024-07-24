@@ -34,7 +34,7 @@ MachineAccess.belongsTo(Machine, {
   foreignKey: 'machine_id',
 });
 
-// connections for audit_july012024-Machine-Operator-Sample tables
+// connections for result-Machine-Operator-Sample tables
 Machine.hasMany(result, {
   foreignKey: 'machine_id',
 });

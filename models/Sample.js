@@ -18,10 +18,6 @@ Sample.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
-    registration_date: {
-        type: DataTypes.STRING,
-        isDate: true,
-    },
     // This column will contain a foreign key: the `id` of the `Machine` that owns this Sample
     machine_id: {
       type: DataTypes.INTEGER,

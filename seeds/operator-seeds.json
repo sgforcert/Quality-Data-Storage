@@ -1,9 +1,9 @@
 [
     {
-        "operator_name": "Valery",
+        "operator_name": "Yash",
         "role": "operator",
         "registration_date": "2020-02-15",
-        "email": "valery@vitamins.com",
+        "email": "yash@vitamins.com",
         "password": "pas001"
     },
     {
@@ -14,24 +14,26 @@
         "password": "pas002"
     },
     {
-        "operator_name": "Mary",
-        "role": "operator",
-        "registration_date": "1995-03-01",
-        "email": "mary@vitamins.com",
-        "password": "pas003"
-    },
-    {
         "operator_name": "Jhon",
         "role": "operator",
         "registration_date": "2020-02-15",
         "email": "jhon@vitamins.com",
-        "password": "pas004"
+        "password": "pas003"
+
     },
     {
-        "operator_name": "Nate",
+        "operator_name": "Mary",
+        "role": "operator",
+        "registration_date": "1995-03-01",
+        "email": "mary@vitamins.com",
+        "password": "pas004"
+
+    },
+    {
+        "operator_name": "Dhruva",
         "role": "operator",
         "registration_date": "2022-08-17",
-        "email": "nate@vitamins.com",
+        "email": "dhruva@vitamins.com",
         "password": "pas005"
     }
 ]

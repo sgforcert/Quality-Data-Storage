@@ -1,0 +1,30 @@
+[
+    {
+        "sample_name": "Visual Sample",
+        "machine_id": "1"
+    },
+    {
+        "sample_name": "Visual Sample",
+        "machine_id": "2"
+    },
+    {
+        "sample_name": "Weight Sample",
+        "machine_id": "2"
+    },
+    {
+        "sample_name": "Visual Sample",
+        "machine_id": "3"
+    },
+    {
+        "sample_name": "Correct Assembly Sample",
+        "machine_id": "3"
+    },
+    {
+        "sample_name": "Visual Sample",
+        "machine_id": "4"
+    },
+    {
+        "sample_name": "Water Leak Sample",
+        "machine_id": "4"
+    }
+]

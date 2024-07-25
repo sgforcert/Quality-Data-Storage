@@ -65,12 +65,6 @@ Operator.init(
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
-
-      // // the beforeUpdate hook to make all of the characters lower case in an updated email address, before updating the database.
-      // beforeUpdate: async (updatedUserData) => {
-      //   updatedUserData.email = await updatedUserData.email.toLowerCase();
-      //   return updatedUserData;
-      // },
     },
 
     sequelize,

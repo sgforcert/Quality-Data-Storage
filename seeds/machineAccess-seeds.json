@@ -1,0 +1,122 @@
+[
+    {
+        "operator_id": "1",
+        "machine_id": "1",
+        "access_start_date": "2021-01-15",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "1",
+        "machine_id": "2",
+        "access_start_date": "2022-05-10",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "1",
+        "machine_id": "3",
+        "access_start_date": "2020-03-15",
+        "access_type": "Read"
+    },
+    {
+        "operator_id": "1",
+        "machine_id": "4",
+        "access_start_date": "2020-03-15",
+        "access_type": "Read"
+    },
+    {
+        "operator_id": "2",
+        "machine_id": "1",
+        "access_start_date": "2019-06-17",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "2",
+        "machine_id": "2",
+        "access_start_date": "2018-01-04",
+        "access_type": "Read"
+    },
+    {
+        "operator_id": "2",
+        "machine_id": "3",
+        "access_start_date": "2019-05-10",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "2",
+        "machine_id": "4",
+        "access_start_date": "2018-01-04",
+        "access_type": "Read"
+    },
+    {
+        "operator_id": "3",
+        "machine_id": "1",
+        "access_start_date": "2018-01-15",
+        "access_type": "Read"
+    },
+    {
+        "operator_id": "3",
+        "machine_id": "2",
+        "access_start_date": "2018-04-01",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "3",
+        "machine_id": "3",
+        "access_start_date": "2018-11-19",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "3",
+        "machine_id": "4",
+        "access_start_date": "2023-08-23",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "4",
+        "machine_id": "1",
+        "access_start_date": "2020-09-10",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "4",
+        "machine_id": "2",
+        "access_start_date": "2020-04-22",
+        "access_type": "Read"
+    },
+    {
+        "operator_id": "4",
+        "machine_id": "3",
+        "access_start_date": "2022-03-23",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "4",
+        "machine_id": "4",
+        "access_start_date": "2018-01-15",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "5",
+        "machine_id": "1",
+        "access_start_date": "2022-09-01",
+        "access_type": "Read"
+    },
+    {
+        "operator_id": "5",
+        "machine_id": "2",
+        "access_start_date": "2023-05-11",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "5",
+        "machine_id": "3",
+        "access_start_date": "2023-07-21",
+        "access_type": "Full"
+    },
+    {
+        "operator_id": "5",
+        "machine_id": "4",
+        "access_start_date": "2024-01-09",
+        "access_type": "Full"
+    }
+]

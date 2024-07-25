@@ -40,6 +40,7 @@ Machine.init(
           return newData;
         },
       },
+
     sequelize,
     timestamps: false,
     underscored: true,

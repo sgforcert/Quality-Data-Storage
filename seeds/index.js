@@ -10,12 +10,12 @@ const seedDatabase = async () => {
 
   await sequelize.sync({ force: true });
 
-  await Machine.bulkCreate(machineData, {
+  await Operator.bulkCreate(operatorData , {
     individualHooks: true,
     returning: true,
   });
 
-  await Operator.bulkCreate(operatorData , {
+  await Machine.bulkCreate(machineData, {
     individualHooks: true,
     returning: true,
   });

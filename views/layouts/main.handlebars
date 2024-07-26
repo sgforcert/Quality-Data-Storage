@@ -13,25 +13,33 @@
 
   <header>
     <h1>
-      Welcome to our Home Page for internal users!
+      Welcome to Vitamins Co! 
     </h1>
-
-    {{!-- {{#if logged_in}}
-
-    <nav>
-      <button class="btn" id="logout">logout</button>
-    </nav>
-    {{/if}} --}}
+    <h1>
+      Have a nice day!
+    </h1>
+    <p> This website is for company's employees 
+    internal use </p>
   </header>
+
   <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    {{!-- <button id="logout" class="btn-no-style">Logout</button> --}}
-    <a href="/document">Login</a>
+    {{!-- <a href="/">Home</a> --}}
+   
+
+    {{#if logged_in}}
+    
+    <button id="logout" class="btn btn-primary">Logout</button>
+    
     {{else}}
-    <button class="btn" id="logout">logout</button>
+    <a href="/documents">Documents</a>
+    <a href="#title-login">login</a>
+
+    
+
     {{/if}}
   </nav>
+  
+
   <main>
     <aside>
       <h1>Vitamins Company!</h1>
@@ -67,17 +75,16 @@
 
         <!--id attributes to provide unique identifier for element-->
         <li id="email">
-          <strong>MARYNA MARTSENIUK</strong> <a href="#">marina.ved80@gmail.com</a>
+          <strong>Maryna Martseniuk</strong> <a href="#">marina.ved80@gmail.com</a>
         </li>
 
         <!--id attributes to provide unique identifier for element-->
         <li id="email">
-          <strong>KaiBurgess</strong> <a href="#">kdburgess12@gmail.com</a>
+          <strong>Kai Burgess</strong> <a href="#">kdburgess12@gmail.com</a>
         </li>
-
-
-
       </ul>
+      <p>This webApp is studend project for the UofU bootcam</p>
+      <p>2024</p>
     </section>
   </footer>
 

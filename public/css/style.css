@@ -44,12 +44,18 @@ aside {
   flex: 10%;
   background-color: #b9c6ae;
   padding: 80px;
-  text-align: left;
+  text-align: center;
   }
+
+footer {
+  background: #001322;
+  color: #fff;
+}
   
   .products {
     
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: rgb(216, 229, 255);
     padding: 50px;
     display: flex;
     flex-wrap: wrap;

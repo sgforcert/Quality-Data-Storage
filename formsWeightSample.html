@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Weight Sample</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="formTitle">
+            <h2>Weight Sample</h2>
+        </div>
+        <p>
+            <label>
+            for:
+            <select>
+                <option value="default">Choose…</option>
+                <option>Machine A</option>
+                <option>Machine B</option>
+                <option>Machine C</option>
+                <option>Machine D</option>
+            </select>
+            </label>
+        </p>
+        <hr/>
+        <hr/>
+        <div>
+            <p>Weight of the idividual components is correct:</p>
+            <form>
+                <input type="radio" id="pass" value="pass">
+                <label for="pass">pass</label><br>
+                <input type="radio" id="failed" value="failed">
+                <label for="failed">failed</label><br>
+            </form>
+            <hr/>
+            <p>Total Weight is correct:</p>
+            <form>
+                <input type="radio" id="pass" value="pass">
+                <label for="pass">pass</label><br>
+                <input type="radio" id="failed" value="failed">
+                <label for="failed">failed</label><br>
+              </form>
+            <hr/>
+            <form>
+                <p>
+                    <label for="time">Time:</label><br>
+                    <input type="text" id="time" placeholder="11:40am"><br>
+                </p>
+                <p>
+                    <label for="date">Date:</label><br>
+                    <input type="date" id="date"><br>
+                </p>
+                <p>
+                    <label for="oparatorName">Operator name:</label><br>
+                    <input type="text" id="oparatorName"><br>
+                </p>
+                <p>
+                    <label for="oparatorID">Operator ID:</label><br>
+                    <input type="text" id="OperatorID"><br>
+                </p>
+            </form>
+            <p>
+                <button type="submit" class="submit">Submit</button>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- <script src="forms.js"></script> -->
+</body>
+</html>

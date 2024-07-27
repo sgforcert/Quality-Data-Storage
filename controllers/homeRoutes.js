@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Operator } = require('../models');
+const { Machine, MachineAccess, Operator, Samples } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -15,6 +15,10 @@ router.get('/', withAuth, async (req, res) => {
       operators,
       logged_in: req.session.logged_in,
     });
+
+    // const userData = await Operator.findOne({ where: { email: req.body.email } });
+
+
   } catch (err) {
     res.status(500).json(err);
   }

@@ -1,0 +1,84 @@
+<body>
+    <form id="audit-form" action="audit" method="post">
+        {{!--
+        <div class="form-floating mb-3">
+            <input name="title" class="form-control" placeholder="Audit">
+            <lable>Book Title</lable> --}}
+
+
+            <div class="" form-floating mb-3>
+                <input type="text" name="Machine id" class=" form-control" placeholder=" Machine">
+                <label>
+                    Machine:
+                    <select id="Machine-id">
+
+                        <option value="default">Choose…</option>
+                        <option value="1"> Machine A</option>
+                        <option value="2"> Machine B</option>
+                        <option value="3"> Machine C</option>
+                        <option value="4"> Machine D</option>
+                    </select>
+                </label>
+            </div>
+
+
+            <div class="" form-floating mb-3>
+                <input type="number" name="Sample id" class=" form-control" placeholder=" Sample">
+                <label>
+                    Sample ID:
+                    <select id="Sample-id">
+
+                        <option="default">Choose…</option>
+                            <option value="1">visual sample</option>
+                            <option value="3">weight sample</option>
+                            <option value="5">correct assembly sample</option>
+                            <option value="7">water leak sample</option>
+                    </select>
+                </label>
+            </div>
+
+
+            <div class="" form-floating mb-3>
+                <input type="date" id="Sample-Date" name="Sample Date" class=" form-control" placeholder=" Sample date">
+                <label>
+                    Sample-Date</label>
+            </div>
+
+
+            <div class="" form-floating mb-3>
+                <input type="text" id="Sample-notes" name="Sample notes" class=" form-control"
+                    placeholder=" Sample notes">
+                <label>
+                    Sample notes:
+                </label>
+            </div>
+
+
+            <div class="" form-floating mb-3>
+                <input type="number" id="Operator-id" name="Operator id" class=" form-control"
+                    placeholder=" Operator id">
+                <label>
+                    Operator id:
+                </label>
+            </div>
+
+
+            <div class="" form-floating mb-3>
+                <input type="text" id="Sample-result" name="Sample result" class=" form-control"
+                    placeholder=" Sample result">
+                <label>
+                    Sample result:
+                </label>
+            </div>
+
+            <div class="float-end">
+                <button type="submit" class="btn btn-success">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="/js/audit.js"></script>
+</body>

@@ -2,23 +2,23 @@ const Operator = require('./Operator.js');
 const Machine = require('./Machine.js');
 const Sample = require('./Sample.js');
 const MachineAccess = require('./MachineAccess.js');
-const result = require('./result.js');
+const Result = require('./Result.js');
 
 // connections for Sample-Machine tables 
 Machine.hasMany(Sample, {
-    foreignKey: 'machine_id',
-    onDelete: 'CASCADE',
+  foreignKey: 'machine_id',
+  onDelete: 'CASCADE',
 });
-  
+
 Sample.belongsTo(Machine, {
-    foreignKey: 'machine_id',
+  foreignKey: 'machine_id',
 });
- 
+
 
 //connections for MachineAccess-Operator-Machine tables 
 Operator.hasMany(MachineAccess, {
-    foreignKey: 'operator_id',
-    onDelete: 'CASCADE',
+  foreignKey: 'operator_id',
+  onDelete: 'CASCADE',
 });
 
 MachineAccess.belongsTo(Operator, {
@@ -34,30 +34,30 @@ MachineAccess.belongsTo(Machine, {
   foreignKey: 'machine_id',
 });
 
-// connections for result-Machine-Operator-Sample tables
-Machine.hasMany(result, {
-  foreignKey: 'machine_id',
-});
+// // connections for result-Machine-Operator-Sample tables
+// Machine.hasMany(result, {
+//   foreignKey: 'machine_id',
+// });
 
-result.belongsTo(Machine, {
-  foreignKey: 'machine_id',
-});
+// Result.belongsTo(Machine, {
+//   foreignKey: 'machine_id',
+// });
 
-Operator.hasMany(result, {
-  foreignKey: 'operator_id',
-});
+// Operator.hasMany(result, {
+//   foreignKey: 'operator_id',
+// });
 
-result.belongsTo(Operator, {
-  foreignKey: 'operator_id',
-});
+// result.belongsTo(Operator, {
+//   foreignKey: 'operator_id',
+// });
 
-Sample.hasMany(result, {
-  foreignKey: 'sample_id',
-});
+// Sample.hasMany(result, {
+//   foreignKey: 'sample_id',
+// });
 
-result.belongsTo(Sample, {
-  foreignKey: 'sample_id',
-});
+// result.belongsTo(Sample, {
+//   foreignKey: 'sample_id',
+// });
 
-  module.exports = { Operator, Machine, Sample, MachineAccess, result };
+module.exports = { Operator, Machine, Sample, MachineAccess, Result };
 

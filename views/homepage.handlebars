@@ -1,52 +1,60 @@
-{{!-- {{#each operators as |operator| }}
+{{#each operators as |operator| }}
 <div class="row align-center mb-5">
   <div class="col-md-6">
+    <a href="/profile/{{operator.id}}">
+
     <h2>{{{get_emoji}}} {{operator.operator_name}}</h2>
   </div>
   <div class="col-md-6">
     <h3><a href="mailto:{{operator.email}}">{{operator.email}}</a></h3>
+    <h3> <a href="audit" class="btn btn-outline-secondary"> Click to Audit </a></h3>
   </div>
 </div>
-{{/each}} --}}
+{{/each}}
 
+<script src="./js/oppo.js"></script>
+
+
+{{!--
 <form class="operatorID-form">
   <div>
     <label for="operator-id">Operatot ID:</label>
     <input type="text" id="operator-id" />
   </div>
-    <div>
+  <div>
     <button class="btn btn-primary" type="submit">Submit ID</button>
   </div>
 </form>
 
-    <div id="chooseMachineContainer">
-        <h3 id="cMTitle">Choose a Machine you are assign to today:</h3>
-        <dialog id="favDialog">
-            <form>
-            <p>
-                <label>
-                a Machine List available for you:
-                <select>
-                    <option value="default">Choose…</option>
-                    <option>Machine A</option>
-                    <option>Machine B</option>
-                    <option>Machine C</option>
-                    <option>Machine D</option>
-                </select>
-                </label>
-            </p>
-            <div>
-                <button value="cancel" formmethod="dialog">Cancel</button>
-                <button id="confirmBtn" value="default">Confirm</button>
-            </div>
-            </form>
-        </dialog>
-        <p>
-            <button id="showDialog" class="btn btn-primary">Choose a Machine</button>
-        </p>
-        <output></output>
+<div id="chooseMachineContainer">
+  <h3 id="cMTitle">Choose a Machine you are assign to today:</h3>
+  <dialog id="favDialog">
+    <form>
+      <p>
+        <label>
+          a Machine List available for you:
+          <select>
+            <option value="default">Choose…</option>
+            <option>Machine A</option>
+            <option>Machine B</option>
+            <option>Machine C</option>
+            <option>Machine D</option>
+          </select>
+        </label>
+      </p>
+      <div>
+        <button value="cancel" formmethod="dialog">Cancel</button>
+        <button id="confirmBtn" value="default">Confirm</button>
+      </div>
+    </form>
+  </dialog>
+  <p>
+    <button id="showDialog" class="btn btn-primary">Choose a Machine</button>
+  </p>
+  <output></output>
 
-    </div>
-
+</div>
 <script src="/js/login.js"></script>
-<script src="/js/chooseMachine.js"></script>
+
+
+<script src="/js/chooseMachine.js"></script> --}}

@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Create a new Sequelize model for Machines
-class Result extends Model { }
+class result extends Model { }
 
-Result.init(
+result.init(
   // Define fields/columns on model
   // An `id` is automatically created by Sequelize, we define the primary key ourselves
   {
@@ -14,14 +14,20 @@ Result.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    machine_name: {
-      type: DataTypes.STRING,
+    machine_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'machine',
+        key: 'id',
+      },
     },
-
-    sample_name: {
-      type: DataTypes.STRING,
+    sample_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'sample',
+        key: 'id',
+      },
     },
-
     sample_day: {
       type: DataTypes.DATE,
       allowNull: true,
@@ -35,8 +41,13 @@ Result.init(
         len: [4],
       },
     },
-    operator_name: {
-      type: DataTypes.STRING,
+    operater_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        // This references areconnected to the `Machine` model, which has machine `id`
+        model: 'sample',
+        key: 'id',
+      },
     },
     sample_result: {
       type: DataTypes.STRING,
@@ -53,4 +64,4 @@ Result.init(
   }
 );
 
-module.exports = Result;
+module.exports = result;

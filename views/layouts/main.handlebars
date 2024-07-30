@@ -13,32 +13,33 @@
 
   <header>
     <h1>
-      Welcome to Vitamins Co! 
+      Welcome to Vitamins Co!
     </h1>
     <h1>
       Have a nice day!
     </h1>
-    <p> This website is for company's employees 
-    internal use </p>
+    <p> This website is for company's employees
+      internal use </p>
   </header>
 
   <nav>
     {{!-- <a href="/">Home</a> --}}
-   
+
 
     {{#if logged_in}}
-    
+
     <button id="logout" class="btn btn-primary">Logout</button>
-    
+
     {{else}}
-    <a href="/documents">Documents</a>
+    <a href="/Audit Result">AuditResult</a>
     <a href="#title-login">login</a>
 
-    
+
+
 
     {{/if}}
   </nav>
-  
+
 
   <main>
     <aside>

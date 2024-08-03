@@ -1,5 +1,5 @@
 # Quality-Data-Storage
-Quality Data Storage for production
+
 (Quality Data Storage of e-documentation spaice for production companies)
 
 ## Motivation:
@@ -27,7 +27,7 @@ We learned how to use
 ## Instalation:
 - To use this data storage you would use this url to access it:  https://quality-data-storage.onrender.com/
   For this version of the project an access is expires on Augest 28th, 2024
-
+  
 ## Usage:
 After this WebApp adjusted by a Company needs then:
 1. Simply open this webpp in any browser;
@@ -38,7 +38,7 @@ After this WebApp adjusted by a Company needs then:
 6. from the home page you can acces to the page with audit info (results of samples). As for now this access is available for any employee. But in our plans to make it optional.
 
 ## This WebApp is still under developing
-![Now this WebPage as it looks like](https://github.com/)
+![Now this WebPage as it looks like](https://github.com/MarynaMartseniuk/Quality-Data-Storage/blob/main/public/assets/home-page.jpg/)
 
 Our plans:
 1. work on appearance
